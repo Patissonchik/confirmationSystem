@@ -19,7 +19,6 @@ class SmsService {
                 'body' => $message,
             ]);
         } catch (\Exception $e) {
-            // Обработка ошибок
             //Log::error('Ошибка при отправке SMS: ' . $e->getMessage());
             throw $e; //Опционально: пробрасываем исключение дальше
         }
